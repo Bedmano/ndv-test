@@ -1,0 +1,45 @@
+.menu__address {
+  order: 7;
+  padding-left: 50px;
+  color: $brown;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: bold;
+  position: relative;
+
+  &::before {
+    content: "\f3c5";
+    color: $dark-green;
+    font-size: 10px;
+    font-weight: 900;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-family: "Font Awesome 5 Free";
+    top: 2px;
+    left: 25px;
+    background-color: $light-brown;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 1px;
+    padding-right: 1px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__address {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+
+    &::before {
+      top: 0;
+    }
+    br {
+      display: none;
+    }
+  }
+}
+

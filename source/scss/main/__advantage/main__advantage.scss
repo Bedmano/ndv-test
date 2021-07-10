@@ -1,0 +1,141 @@
+.main__advantage {
+  .container {
+    padding: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .advantage__info,
+  .advantage__image {
+    width: 100%;
+    height: 249px;
+  }
+
+  .advantage__info {
+    background-color: $dark-green;
+    background-image: url("../img/ellipse.png");
+    background-position: 0px -70px;
+    color: $light-brown;
+    font-size: 24px;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding-top: 95px;
+    padding-left: 74px;
+    font-weight: bold;
+    position: relative;
+    background-repeat: no-repeat;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 33px;
+      background-image: url("../img/trees.svg");
+      background-size: 50px 33px;
+      top: 50px;
+      left: 65px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main__advantage {
+    .container {
+      flex-direction: row;
+    }
+    .advantage__info,
+    .advantage__image {
+      width: 50%;
+      height: 249px;
+    }
+  }
+}
+
+@media (min-width: 1152px) {
+  .main__advantage {
+    .container {
+      width: 1012px;
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+
+    .advantage__info {
+      width: 515px;
+      height: 328px;
+      background-position: 0px -20px;
+      font-size: 36px;
+      line-height: 46px;
+      padding-top: 122px;
+      padding-left: 77px;
+
+      &::before {
+        width: 65px;
+        height: 44px;
+        background-size: 65px 44px;
+        top: 60px;
+      }
+    }
+
+    .advantage__image {
+      width: 498px;
+      height: 328px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .main__advantage {
+    .container {
+      width: 1130px;
+      padding-left: 155px;
+      padding-right: 155px;
+    }
+
+    .advantage__info {
+      width: 574px;
+      height: 366px;
+      background-position: 0 0;
+      padding-top: 136px;
+      padding-left: 107px;
+
+      &::before {
+        width: 65px;
+        height: 44px;
+        background-size: 65px 44px;
+        top: 70px;
+        left: 100px;
+      }
+    }
+
+    .advantage__image {
+      width: 556px;
+      height: 366px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .main__advantage {
+    .container {
+      width: 1220px;
+      padding-left: 350px;
+      padding-right: 350px;
+    }
+
+    .advantage__info {
+      width: 620px;
+      height: 395px;
+      background-position: 0 30px;
+      padding-top: 147px;
+      padding-left: 114px;
+      padding-right: 160px;
+    }
+
+    .advantage__image {
+      width: 600px;
+      height: 395px;
+    }
+  }
+}

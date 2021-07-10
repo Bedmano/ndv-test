@@ -1,0 +1,29 @@
+.menu__choose-apartment {
+  font-family: inherit;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-color;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: $light-brown;
+  width: 134px;
+  height: 40px;
+  order: 2;
+
+  &:hover {
+    border: 1px solid $lime;
+  }
+  &:active {
+    background-color: $lime;
+  }
+}
+
+@media (min-width: 1152px) {
+  .menu__choose-apartment {
+    order: 5;
+  }
+}

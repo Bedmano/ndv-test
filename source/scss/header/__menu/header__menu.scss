@@ -1,0 +1,53 @@
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+
+  .menu__logo {
+    order: 1;
+  }
+}
+
+@media (min-width: 1152px) {
+  .header__menu {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 310px;
+    align-items: baseline;
+    justify-content: space-around;
+    position: absolute;
+    left: 70px;
+    top: 0;
+  }
+
+  .menu__logo {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__menu {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header__menu {
+    left: 110px;
+  }
+
+  .menu__logo {
+    margin-left: -50px;
+  }
+}
+
+@import "__navigation/menu__navigation.scss";
+@import "__watch/menu__watch.scss";
+@import "__contacts/menu__contacts.scss";
+@import "__address/menu__address.scss";
+@import "__open/menu__open.scss";
+@import "__choose-apartment/menu__choose-apartment.scss";

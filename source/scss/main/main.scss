@@ -1,0 +1,32 @@
+.main {
+  margin-top: 120px;
+  margin-bottom: 180px;
+
+  &__slogan,
+  &__description {
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-color;
+  }
+
+  &__slogan {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+
+  &__description {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin-top: 0;
+  }
+}
+
+@import "__addresses/main__addresses.scss";
+@import "__advantage/main__advantage.scss";
+@import "__gallery/main__gallery.scss";
+@import "__additional-info/main__additional-info.scss";

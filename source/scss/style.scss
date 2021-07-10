@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "CeraPro";
+  src: local("CeraPro-Regular"),
+    url("../fonts/CeraPro-Regular.woff2") format("woff2"),
+    url("../fonts/CeraPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+$cream: #f8f1e2;
+$light-brown: #e3cea3;
+$dark-green: #0b351d;
+$lime: #9fc460;
+$text-color: #2d2d2d;
+$brown: #9e7b56;
+$border: #14482b;
+$white: #ffffff;
+$orange: #ed7e32;
+$pink: #f4a6af;
+
+
+body {
+  font-family: "CeraPro", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  padding-left: 38px;
+  padding-right: 37px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 655px;
+    padding-left: 56px;
+    padding-right: 57px;
+  }
+}
+
+@media (min-width: 1152px) {
+  .container {
+    width: 1012px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1130px;
+    padding-left: 155px;
+    padding-right: 155px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    width: 1220px;
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+}
+
+@import "header/header.scss";
+@import "main/main.scss";
+@import "footer/footer.scss";

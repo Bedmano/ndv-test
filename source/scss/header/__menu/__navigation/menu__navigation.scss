@@ -1,0 +1,45 @@
+.menu__navigation {
+  order: 4;
+  flex-basis: 100%;
+  list-style: none;
+  padding-left: 50px;
+
+  a {
+    text-decoration: none;
+    color: $light-brown;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 38px;
+
+    &:hover {
+      border-bottom: 1px solid $light-brown;
+    }
+
+    &:active {
+      color: $lime;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__navigation {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1152px) {
+  .menu__navigation.hidden {
+    display: block;
+    padding-left: 0;
+  }
+
+  .menu__navigation {
+    order: 2;
+    margin-top: 50px;
+
+
+    a {
+      line-height: 33px;
+    }
+  }
+}

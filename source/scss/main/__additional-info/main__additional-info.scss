@@ -1,0 +1,87 @@
+.main__additional-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .additional-info__item {
+    font-size: 16px;
+    line-height: 24px;
+    flex-basis: 50%;
+    padding-left: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-top: 60px;
+    position: relative;
+
+    &--gold {
+      font-size: 14px;
+      line-height: 21px;
+      color: $brown;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -50px;
+      left: 20px;
+      width: 40px;
+      height: 40px;
+      background-size: 40px 40px;
+    }
+
+    &--crane::before {
+      background-image: url("../img/crane.svg");
+    }
+
+    &--hotel::before {
+      background-image: url("../img/hotel.svg");
+    }
+
+    &--building::before {
+      background-image: url("../img/building.svg");
+    }
+
+    &--garage::before {
+      background-image: url("../img/garage.svg");
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main__additional-info {
+    .additional-info__item {
+      flex-basis: auto;
+      padding-left: 60px;
+      margin-top: 45px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+      }
+    }
+  }
+}
+@media (min-width: 1152px) {
+  .main__additional-info {
+    .additional-info__item {
+      font-size: 16px;
+      line-height: 24px;
+
+      &--gold {
+        font-size: 18px;
+        line-height: 27px;
+      }
+      &::before {
+        top: 0px;
+        width: 49px;
+        height: 49px;
+        background-size: 49px 49px;
+      }
+    }
+  }
+}

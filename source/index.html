@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НДВ-супермаркет недвижемости тестовое задание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="container">
+                <div class="header__menu">
+                    <a class="menu__logo" href="index.html" aria-label="перейти на главную страницу">
+                        <picture>
+                            <source media="(min-width: 1152px) and (max-width:1439px)" srcset="img/logo_tablet.png">
+                            <source media="(min-width: 1440px)" srcset="img/logo_desktop.png">
+                            <img src="img/logo_mobile.png" alt="логотип сайта сказочный лес">
+                        </picture>
+                    </a>
+
+                    <ul class="menu__navigation hidden hidden-item">
+                        <li class="navigation__item"><a href="#" aria-label="Перейти на страницу проекта">О проекте</a>
+                        </li>
+                        <li class="navigation__item"><a href="#" aria-label="Перейти на страницу выбора квартир">Выбрать
+                                квартиру</a></li>
+                        <li class="navigation__item"><a href="#"
+                                aria-label="Перейти на страницу условий покупки">Условия
+                                покупки</a></li>
+                        <li class="navigation__item"><a href="#"
+                                aria-label="Перейти на страницу расположения">Расположение</a></li>
+                        <li class="navigation__item"><a href="#"
+                                aria-label="Перейти на страницу документации">Документация</a></li>
+                        <li class="navigation__item"><a href="#" aria-label="Перейти на страницу новостей">Новости</a>
+                        </li>
+                        <li class="navigation__item"><a href="#" aria-label="Перейти на страницу контактов">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="menu__watch hidden hidden-item">
+                        <a class=" watch__link" href="#" aria-label="перейти к просмотру с помощью камер">Камеры
+                            онлайн</a>
+                        <a class=" watch__link" href="#" aria-label="перейти к виртуальному туру">Виртуальный тур</a>
+                    </div>
+
+                    <div class="menu__contacts hidden hidden-item">
+                        <a class="contacts__phone" href="tel: 84959884422" aria-label="связаться с нами">8 495 988 44
+                            22</a>
+                        <a class="contacts__callback" href="#"
+                            aria-label="прейти на страницу с заявкой на звонок">Заказать
+                            звонок</a>
+                    </div>
+
+                    <a class="menu__choose-apartment" href="#">Выбрать квартиру</a>
+                    <address class="menu__address hidden hidden-item">Москва,<br> Лосиноостровская улица, вл45</address>
+                    <button class="menu__open" type="button" aria-label="открыть меню">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="header__info hidden-item">
+                    <h1 class="info__title">Старт продаж</h1>
+                    <p class="info__text">Квартиры в Москве<br>
+                        <span class="info_text--big">от 3,4 млн руб.</span><br>
+                        <span class="info__text--thin">с отделкой</span>
+                    </p>
+                </div>
+            </div>
+            <!-- блок с телефоном и обратной связи на зеленом фоне  -->
+            <div class="header__contacts-mobile">
+                <a class="contacts-mobile__phone" href="tel: 84959884422" aria-label="связаться с нами">позвонить</a>
+                <a class="contacts-mobile__callback" href="#"
+                    aria-label="прейти на страницу с заявкой на звонок">оставить заявку</a>
+            </div>
+
+        </div>
+
+
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__addresses">
+                <address class="main__address--primary">Москва<span>,</span><br> Лосиноостровская улица, вл45</address>
+
+                <div class="main__address--orange">
+                    <p class="address__road">12 минут</p>
+                    <h4 class="address__underground">ВДНХ</h4>
+                </div>
+
+                <div class="main__address--pink">
+                    <p class="address__road">12 минут</p>
+                    <h4 class="address__underground">Ростокино</h4>
+                </div>
+
+                <div class="main__address--orange">
+                    <p class="address__road">15 минут</p>
+                    <h4 class="address__underground">Ботанический сад</h4>
+                </div>
+            </div>
+        </div>
+        <div class="main__advantage">
+            <div class="container">
+                <div class="advantage__info">Жизнь на природе с преимуществами большого города
+                </div>
+                <img class="advantage__image" src="img/district.jpg" alt="изображение района">
+            </div>
+        </div>
+        <div class="container">
+            <p class="main__slogan">«Сказочный лес» — это уникальный проект комфорт-класса для тех, кто хотел бы жить на
+                природе, но при этом не потерять массу преимуществ большого города.</p>
+            <p class="main__description">
+                Жилой комплекс расположен в Северо-Восточном административном округе в окружении самых живописных мест
+                Национального парка «Лосиный Остров». Он представляет собой четыре корпуса переменной этажности –
+                высотой от 11 до 26 этажей, с подземным паркингом, детским садом, фитнес-центром с бассейном и отдельно
+                стоящей общеобразовательной школой. Первые этажи домов отданы под торговые и офисные помещения. Для
+                будущих жителей комплекса будет создана вся необходимая социальная и торговая инфраструктура. Завершение
+                строительства всех корпусов ЖК «Сказочный лес» намечено на 2 квартал 2022 года.
+            </p>
+        </div>
+        <div class="main__gallery">
+            <div class="container">
+                <div class="gallery__price gallery-item">
+                    <picture class="gallery-item__image gallery-item__image--wide">
+                        <source media="(min-width:768px)" srcset="img/apartment_tablet.jpg">
+                        <source media="(min-width:1152px)" srcset="img/apartment_macbook.jpg">
+                        <source media="(min-width:1440px)" srcset="img/apartment_desktop.jpg">
+                        <source media="(min-width:1920px)" srcset="img/apartment_fullhd.jpg">
+                        <img src="img/apartment_mobile.jpg" alt="изображение квартиры">
+                    </picture>
+                    <p class="gallery-item__text gallery-item__text--big">Квартиры с отделкой
+                        <span>От 105 т.р. за кв/м</span>
+                    </p>
+                </div>
+                <div class="gallery__eco gallery-item">
+                    <picture class="gallery-item__image gallery-item__image--wide">
+                        <source media="(min-width:768px)" srcset="img/eco_tablet.jpg">
+                        <source media="(min-width:1152px)" srcset="img/eco_macbook.jpg">
+                        <source media="(min-width:1440px)" srcset="img/eco_desktop.jpg">
+                        <source media="(min-width:1920px)" srcset="img/eco_fullhd.jpg">
+                        <img src="img/eco_mobile.jpg" alt="изображение леса">
+                    </picture>
+
+                    <p class="gallery-item__text">Экологически чистый район</p>
+                </div>
+                <div class="gallery__garden gallery-item">
+                    <picture class="gallery-item__image gallery-item__image--square">
+                        <source media="(min-width:768px)" srcset="img/garden_tablet.jpg">
+                        <source media="(min-width:1152px)" srcset="img/garden_macbook.jpg">
+                        <source media="(min-width:1440px)" srcset="img/garden_desktop.jpg">
+                        <source media="(min-width:1920px)" srcset="img/garden_fullhd.jpg">
+                        <img src="img/garden_mobile.jpg" alt="изображение двора">
+                    </picture>
+                    <p class="gallery-item__text">Двор без машин</p>
+                </div>
+                <div class="gallery__security gallery-item">
+                    <picture class="gallery-item__image gallery-item__image--square">
+                        <source media="(min-width:768px)" srcset="img/camera_tablet.jpg">
+                        <source media="(min-width:1152px)" srcset="img/camera_macbook.jpg">
+                        <source media="(min-width:1440px)" srcset="img/camera_desktop.jpg">
+                        <source media="(min-width:1920px)" srcset="img/camera_fullhd.jpg">
+                        <img src="img/camera_mobile.jpg" alt="изображение камер безопасности">
+                    </picture>
+                    <p class="gallery-item__text">Многоуровневая система безопасности</p>
+                </div>
+                <div class="gallery__school gallery-item">
+                    <picture class="gallery-item__image gallery-item__image--tall">
+                        <source media="(min-width:768px)" srcset="img/school_tablet.jpg">
+                        <source media="(min-width:1152px)" srcset="img/school_macbook.jpg">
+                        <source media="(min-width:1440px)" srcset="img/school_desktop.jpg">
+                        <source media="(min-width:1920px)" srcset="img/school_fullhd.jpg">
+                        <img src="img/school_mobile.jpg" alt="изображение радостных детей">
+                    </picture>
+                    <p class="gallery-item__text">Собственная школа и
+                        детский сад</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main__additional-info">
+                <p class="additional-info__item additional-info__item--crane">
+                    <span class="additional-info__item--gold">Срок сдачи</span><br>
+                    IV кв. 2021г
+                </p>
+
+                <p class="additional-info__item additional-info__item--hotel">
+                    <span class="additional-info__item--gold">Класс ЖК</span><br>
+                    Комфорт
+                </p>
+
+
+                <p class="additional-info__item additional-info__item--building">
+                    <span class="additional-info__item--gold">Этажность</span><br>
+                    16-26
+                </p>
+
+
+                <p class="additional-info__item additional-info__item--garage">
+                    <span class="additional-info__item--gold">Паркинг</span><br>
+                    подземный
+                </p>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright">© Сopyright 2018 «Сказочный лес»<br>
+                Информация на сайте не является публичной офертой.
+            </div>
+            <div class="footer__social">
+                <a class="footer__social--fb" href="#" aria-label="перейти на нашу страницу в facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="footer__social--twitter" href="#" aria-label="перейти на нашу страницу в twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="footer__social--instagram" href="#" aria-label="перейти на нашу страницу в instagram">
+                    <i class="fab fa-instagram"></i> </a>
+            </div>
+            <button class="footer__sign" type="button">Записаться на просмотр</button>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

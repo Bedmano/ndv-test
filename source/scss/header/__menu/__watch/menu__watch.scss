@@ -1,0 +1,67 @@
+.menu__watch {
+  order: 5;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 73px;
+
+  .watch__link {
+    flex-basis: 100%;
+    text-decoration: none;
+    color: $lime;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: lowercase;
+    position: relative;
+
+    &:hover {
+      border-bottom: 1px solid $light-brown;
+    }
+
+    &:active {
+      color: $light-brown;
+    }
+  }
+
+  .watch__link:first-of-type::before {
+    content: "";
+    background-image: url("../img/camera.svg");
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    top: 2px;
+    left: -25px;
+  }
+
+  .watch__link:last-of-type::before {
+    content: "";
+    background-image: url("../img/virtual.svg");
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    left: -25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__watch {
+    position: absolute;
+    bottom: 235px;
+    right: 150px;
+  }
+}
+
+@media (min-width: 1152px) {
+  .menu__watch.hidden {
+    display: flex;
+  }
+
+  .menu__watch {
+    order: 3;
+    position: static;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 25px;
+    padding-left: 25px;
+  }
+}

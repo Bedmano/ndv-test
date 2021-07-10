@@ -1,0 +1,83 @@
+.header {
+  width: 100%;
+  height: auto;
+
+  &__wrapper {
+    background-image: url("../img/header_mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 532px;
+    background-position: 50% 100%;
+    position: relative;
+
+
+  }
+
+  &__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 86px;
+    background-color: $dark-green;
+  }
+
+  &__wrapper--active::before {
+    height: 100%;
+  }
+
+  & .hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__wrapper {
+      height: 435px;
+      background-image: url("../img/header_tablet.jpg");
+    }
+  }
+}
+
+@media (min-width: 1152px) {
+  .header {
+    &__wrapper {
+      height: 675px;
+      background-image: url("../img/header_macbook.jpg");
+
+      &::before {
+        width: 310px;
+        height: 100%;
+        background-image: linear-gradient(
+          to top,
+          #0b351d,
+          rgba(227, 206, 163, 0.448) 0%,
+          rgba(11, 53, 29, 0) 79.03%
+        );
+
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    &__wrapper {
+      height: 828px;
+      background-image: url("../img/header_desktop.jpg");
+      background-position: 25% 100%;
+
+      &::before {
+        width: 350px;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@import "__menu/header__menu.scss";
+@import "__info/header__info.scss";
+@import "__contacts-mobile/header__contacts-mobile.scss";
